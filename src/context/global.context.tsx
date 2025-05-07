@@ -2,7 +2,6 @@
 
 import { Context, createContext, useContext } from "react"
 import es from '../../public/locales/es/common.json';
-import en from '../../public/locales/en/common.json';
 
 type TypeContext = {
     t:any

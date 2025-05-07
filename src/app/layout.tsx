@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
+import { PrimeReactProvider } from 'primereact/api';
 import 'primeicons/primeicons.css';
 import 'primeflex/primeflex.scss';
 import 'primeflex/themes/primeone-light.css';
