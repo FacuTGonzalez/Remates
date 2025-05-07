@@ -1,0 +1,18 @@
+{
+    "app_title": "Lector de noticias i18n",
+    "active_locale": "Español",
+    "button_label": "Lee mas",
+    "homepage_nav_link_label": "Regresa",
+    "missionDetail_instructions":"¿Como cumplir la misión?",
+   
+    "apply_button":"Aplicar",
+    "mission_apply_title":"Envíanos tu publicación",
+    "mission_apply_label":"Adjunta tus datos con el link de tu video para obtener tu recompensa.",
+    "phone":"Teléfono",
+    "post_url":"Link de publicación",
+    "confirm":"Confirmar",
+    "missions_title":"Crea contenido y comienza a ganar productos gratis",
+    "missions":"Misiones",
+    "awards":"Premios",
+    "awars_label":"Elige el premio que quieres ganar con tu video"
+  }
