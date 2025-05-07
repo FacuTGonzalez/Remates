@@ -1,12 +1,27 @@
 :root {
-  --background: #ffffff;
+  --background: #F3B167;
   --foreground: #171717;
+  --primary-color: #A0522D; /* Marrón anaranjado similar al fondo (Sienna) */
+  --primary-color-dark: #654321; /* Marrón oscuro para acentos (Dark Chocolate) */
+  --primary-color-light: #D2B48C; /* Marrón claro para toques sutiles (Tan) */
+  --primary-color-text: #FFFFFF; /* Texto primario en blanco o muy claro */
+  --text-color: #333333; /* Color de texto general más oscuro */
+  --surface-0: #F8F8F8; /* Fondo de la superficie más clara */
+  --surface-1: #FFFFFF; /* Otra capa de superficie blanca */
+  color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #F3B167;
+    --foreground: #171717;
+    --primary-color: #A0522D; /* Marrón anaranjado similar al fondo (Sienna) */
+    --primary-color-dark: #654321; /* Marrón oscuro para acentos (Dark Chocolate) */
+    --primary-color-light: #D2B48C; /* Marrón claro para toques sutiles (Tan) */
+    --primary-color-text: #FFFFFF; /* Texto primario en blanco o muy claro */
+    --text-color: #333333; /* Color de texto general más oscuro */
+    --surface-0: #F8F8F8; /* Fondo de la superficie más clara */
+    --surface-1: #FFFFFF; /* Otra capa de superficie blanca */
   }
 }
 
@@ -17,7 +32,8 @@ body {
 }
 
 body {
-  color: var(--foreground);
+  color: black;
+  overflow: auto;
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -39,4 +55,42 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.page-body {
+  padding: 24px;
+  overflow-y: auto;
+  width: 100%;
+  min-height: calc(100vh - 80px);
+}
+
+.p-button {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--primary-color-text);
+}
+
+.p-button:hover {
+  background-color: var(--primary-color-dark);
+  border-color: var(--primary-color-dark);
+}
+
+.p-button:focus {
+  box-shadow: 0 0 0 0.2rem var(--primary-color-light);
+}
+
+.p-inputtext {
+  border: 1px solid #ccc; /* Un borde gris neutro */
+  color: var(--text-color);
+  background-color: var(--surface-0);
+}
+
+.p-inputtext:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem var(--primary-color-light);
+}
+
+.error-message {
+  color: red;
 }

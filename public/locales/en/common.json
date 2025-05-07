@@ -1,0 +1,18 @@
+{
+    "app_title": "i18n News Reader",
+    "active_locale": "English",
+    "button_label": "Read More",
+    "homepage_nav_link_label": "Go Back",
+    "missionDetail_instructions":"How to accomplish the mission?",
+
+    "apply_button":"Apply",
+    "mission_apply_title":"Send us your post",
+    "mission_apply_label":"Attach your details with the link to your video to get your reward.",
+    "phone":"Phone",
+    "post_url":"Post Link",
+    "confirm":"Confirm",
+    "missions_title":"Create content and start earning free products",
+    "missions":"Missions",
+    "awards":"Awards",
+    "awars_label":"Choose the prize you want to win with your video"
+  }
