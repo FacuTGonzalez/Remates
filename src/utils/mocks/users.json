@@ -1,0 +1,34 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "juanperez@gmail.com",
+            "name": "Juan",
+            "lastName":"Perez",
+            "password": "password1234",
+            "role": "ADMIN"
+        },
+        {
+            "id": 2, 
+            "username": "estebanrodriguez@gmail.com",
+            "name": "Esteban",
+            "lastName":"Rodriguez",
+            "password": "password1234",
+            "role": "NATURAL_PERSON"
+        },
+        {
+            "id": 3,
+            "username": "poderjudicial@gmail.com", 
+            "password": "password1234",
+            "entityName" : "Poder judicial Banfield",
+            "role": "JUDICIAL_ENTITY"
+        },
+        {
+            "id": 4,
+            "username": "rematebbva@bbva.com",
+            "password": "password1234",
+            "entityName" : "BBVA",
+            "role": "BANK"
+        }
+    ]
+}

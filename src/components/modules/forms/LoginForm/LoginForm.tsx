@@ -10,7 +10,9 @@ import { Button } from 'primereact/button'
 import styles from './LoginForm.module.scss';
 import { saveUserSession } from '@/utils/localStorage'
 import { useRouter } from 'next/navigation'
-import Image from 'next/image'
+import mocks from '@/utils/mocks/users.json'
+import { useToast } from '@/context/toast'
+import { toast } from 'react-toastify'
 
 
 export const LoginForm = () => {
@@ -22,21 +24,38 @@ export const LoginForm = () => {
             username: '',
             password: '',
         },
-    })
+    });
 
     useEffect(() => {
         setValue('username', '')
         setValue('password', '')
-    }, [])
+    }, []);
 
     const onSubmit = (data: LoginFormConfig) => {
-        saveUserSession(data.username);
-        router.push('/home')
-    }
+        const { username, password } = data;
+
+        const user = mocks.users.find(u => u.username === username);
+
+        if (!user) {
+            toast('Correo electrónico o contraseña incorrecta', {
+                type: 'error'
+            });
+            return;
+        }
+        if (user.password !== password) {
+            toast('Correo electrónico o contraseña incorrecta', {
+                type: 'error'
+            });
+            return;
+        }
+
+        saveUserSession(user.username);
+        router.push("/home");
+    };
 
     return (
         <form onSubmit={handleSubmit(onSubmit)} className={styles.container}>
-            <p className='pt-4 font-bold text-xl'>Inicia sesión</p>
+            <p className='pt-4 font-bold text-xl'>Iniciar sesión</p>
             <div className='mb-2 mt-4'>
                 <div className="my-3">
                     <Controller name={LOGIN_FIELDS.USERNAME_FIELD.name as keyof LoginFormConfig} control={control} render={({ field }) => <div className="flex flex-column gap-2">
@@ -78,5 +97,5 @@ export const LoginForm = () => {
                 <a href="/register" className="text-sm text-primary-color hover:underline">Registrate</a>
             </div>
         </form>
-    )
+    );
 }
