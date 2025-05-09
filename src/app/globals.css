@@ -38,6 +38,30 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('https://noticias.seguroweb.com.ar/wp-content/uploads/2019/06/opel-4105201_960_720.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Capa negra con opacidad */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 0;
+}
+
+/* Para que el contenido esté por encima de la capa oscura */
+body > * {
+  position: relative;
+  z-index: 1;
 }
 
 * {
@@ -77,6 +101,10 @@ a {
 
 .p-button:focus {
   box-shadow: 0 0 0 0.2rem var(--primary-color-light);
+}
+
+.p-button:active {
+  background-color: var(--primary-color-dark);
 }
 
 .p-inputtext {

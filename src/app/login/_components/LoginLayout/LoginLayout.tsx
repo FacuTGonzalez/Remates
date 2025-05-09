@@ -7,8 +7,14 @@ import Image from 'next/image';
 export const LoginLayout = () => {
   return (
     <div className={styles.container}>
-      <Image src="/templates/logo.png" alt="Logo" width={600} height={600} />
-        <LoginForm/>
+      <div>
+        <div className='flex align-items-center'>
+          <p className={styles.leftTitle}>Bienvenido a T</p>
+          <p className={styles.rightTitle}>u Clásico Remates</p>
+        </div>
+        <Image src="/templates/logo.png" alt="Logo" width={600} height={600} />
+      </div>
+      <LoginForm />
     </div>
   )
 }
