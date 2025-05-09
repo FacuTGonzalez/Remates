@@ -7,6 +7,7 @@ import 'primeflex/themes/primeone-light.css';
 import 'primeflex/themes/primeone-dark.css';
 import "primereact/resources/themes/arya-orange/theme.css";
 import "./globals.css";
+import { ToastProvider } from "@/context/toast";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,14 +31,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <div className="page-body">
-        <PrimeReactProvider>
-        {children}
-        </PrimeReactProvider>
-        </div>
+          <ToastProvider>
+            <PrimeReactProvider>
+              {children}
+            </PrimeReactProvider>
+          </ToastProvider>
 
+        </div>
       </body>
     </html>
   );

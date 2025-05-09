@@ -10,7 +10,9 @@ import { Button } from 'primereact/button'
 import styles from './LoginForm.module.scss';
 import { saveUserSession } from '@/utils/localStorage'
 import { useRouter } from 'next/navigation'
-import Image from 'next/image'
+import mocks from '@/utils/mocks/users.json'
+import { useToast } from '@/context/toast'
+import { toast } from 'react-toastify'
 
 
 export const LoginForm = () => {
@@ -22,28 +24,43 @@ export const LoginForm = () => {
             username: '',
             password: '',
         },
-    })
+    });
 
     useEffect(() => {
         setValue('username', '')
         setValue('password', '')
-    }, [])
+    }, []);
 
     const onSubmit = (data: LoginFormConfig) => {
-        saveUserSession(data.username);
-        router.push('/home')
-    }
+        const { username, password } = data;
 
-    console.log(control)
+        const user = mocks.users.find(u => u.username === username);
+
+        if (!user) {
+            toast('Correo electrónico o contraseña incorrecta', {
+                type: 'error'
+            });
+            return;
+        }
+        if (user.password !== password) {
+            toast('Correo electrónico o contraseña incorrecta', {
+                type: 'error'
+            });
+            return;
+        }
+
+        saveUserSession(user.username);
+        router.push("/home");
+    };
+
     return (
         <form onSubmit={handleSubmit(onSubmit)} className={styles.container}>
-            <p className='font-bold text-xl pt-4'>Bienvenido a Tu Clásico Remates</p>
-            <h3 className='pt-4'>Inicia sesión</h3>
-            <div className='mb-6 mt-4'>
+            <p className='pt-4 font-bold text-xl'>Iniciar sesión</p>
+            <div className='mb-2 mt-4'>
                 <div className="my-3">
                     <Controller name={LOGIN_FIELDS.USERNAME_FIELD.name as keyof LoginFormConfig} control={control} render={({ field }) => <div className="flex flex-column gap-2">
                         <div className='flex flex-column'>
-                            <label htmlFor="username">Usuario</label>
+                            <label htmlFor="username">{LOGIN_FIELDS.USERNAME_FIELD.label}</label>
                             <InputText className='my-2 h-2rem' id={LOGIN_FIELDS.USERNAME_FIELD.name} aria-describedby="username-help" {...field} />
                             <small className='error-message' id="username-help">
                                 {getFormErrorMessage(LOGIN_FIELDS.USERNAME_FIELD.name, errors)}
@@ -56,7 +73,7 @@ export const LoginForm = () => {
                 <div className="my-3">
                     <Controller name={LOGIN_FIELDS.PASSWORD_FIELD.name as keyof LoginFormConfig} control={control} render={({ field }) => <div className="flex flex-column gap-2">
                         <div className='flex flex-column'>
-                            <label htmlFor="username">Contraseña</label>
+                            <label htmlFor="password">{LOGIN_FIELDS.PASSWORD_FIELD.label}</label>
                             <InputText className='my-2 h-2rem' id={LOGIN_FIELDS.PASSWORD_FIELD.name} aria-describedby="password-help" {...field} />
                             <small id="username-help">
                                 {getFormErrorMessage(LOGIN_FIELDS.PASSWORD_FIELD.name, errors)}
@@ -70,7 +87,7 @@ export const LoginForm = () => {
             <div className='flex justify-content-center my-3'>
                 <Button
                     type="submit"
-                    className="rounded p-2 hover:bg-blue-600 w-8rem"
+                    className="rounded p-2 w-8rem"
                     label=' Iniciar sesión'
                     disabled={!isValid}
                 />
@@ -80,5 +97,5 @@ export const LoginForm = () => {
                 <a href="/register" className="text-sm text-primary-color hover:underline">Registrate</a>
             </div>
         </form>
-    )
+    );
 }
