@@ -38,7 +38,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('https://noticias.seguroweb.com.ar/wp-content/uploads/2019/06/opel-4105201_960_720.jpg');
+  background-image: url('/templates/background-image.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -82,7 +82,6 @@ a {
 }
 
 .page-body {
-  padding: 24px;
   overflow-y: auto;
   width: 100%;
   min-height: calc(100vh - 80px);

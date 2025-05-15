@@ -15,5 +15,4 @@ export enum UserRole {
     NATURAL_PERSON= 'NATURAL_PERSON',
     BANK = 'BANK',
     JUDICIAL_ENTITY = 'JUDICIAL_ENTITY',
-    ADMIN = 'ADMIN'
 }

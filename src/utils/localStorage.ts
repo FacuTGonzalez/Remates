@@ -10,6 +10,7 @@ type UserSession = {
       user: username,
       isLogged: true,
     };
+    //@ts-ignore
     localStorage.setItem('userSession', JSON.stringify(sessionData));
   };
   

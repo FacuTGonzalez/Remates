@@ -8,6 +8,7 @@ import 'primeflex/themes/primeone-dark.css';
 import "primereact/resources/themes/arya-orange/theme.css";
 import "./globals.css";
 import { ToastProvider } from "@/context/toast";
+import { Navbar } from "@/components/modules/Navbar/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,10 +36,10 @@ export default function RootLayout({
         <div className="page-body">
           <ToastProvider>
             <PrimeReactProvider>
+              <Navbar/>
               {children}
             </PrimeReactProvider>
           </ToastProvider>
-
         </div>
       </body>
     </html>
