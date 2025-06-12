@@ -1,8 +1,56 @@
 .container {
+  display: flex;
 
-    .leftSection{
-        min-height: 100vh;
-        background-color: #B46C2D;
-        width: 420px;
+  .leftSection {
+    height: 93.2vh;
+    background-color: #B46C2D;
+    min-width: 280px;
+    max-width: 420px;
+    padding: 16px 2px 0 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .userCard {
+      background-color: #c68642; // marrón claro
+      border-radius: 12px;
+      padding: 16px;
+      color: #1e1e1e;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0 16px;
+      height: 200px;
+
+      .name {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 12px;
+        text-align: center;
+      }
+
+      p {
+        font-size: 14px;
+        margin: 4px 0;
+
+        strong {
+          display: inline-block;
+          width: 130px;
+        }
+
+        span {
+          font-weight: 500;
+        }
+      }
     }
+  }
+
+  .rightSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 1500px;
+    overflow: auto;
+    padding: 16px;
+  }
 }

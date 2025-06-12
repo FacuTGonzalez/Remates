@@ -9,7 +9,6 @@ export const Navbar = () => {
                 <Link href={'/home'}>
                     <Image src="/templates/logo.png" alt="Logo" width={64} height={64} />
                 </Link>
-                <p className='text-2xl font-bold'>Tu Clásico Remates</p>
                 <p className='cursor-pointer hover:underline text-sm'>Cerrar sesión</p>
         </div>
     )

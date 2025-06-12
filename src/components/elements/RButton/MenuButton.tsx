@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from 'primereact/button'
 import { useRouter } from 'next/navigation';
-import styles from './RButton.module.scss';
+import styles from './MenuButton.module.scss';
 
 interface MenuButtonProps {
     label: string;

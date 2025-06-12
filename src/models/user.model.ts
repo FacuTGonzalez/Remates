@@ -8,7 +8,10 @@ export interface User {
     entityName?: string;
     name?: string;
     lastName?: string;
-    role: UserRole
+    role: UserRole;
+    cuit: string;
+    location: string;
+    isVerified: boolean
 }
 
 export enum UserRole {

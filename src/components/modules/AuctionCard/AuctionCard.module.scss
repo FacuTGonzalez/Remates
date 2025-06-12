@@ -1,0 +1,52 @@
+.container {
+    border-radius: 12px;
+    border: solid 1px black;
+    width: 425px;
+    height: 200px;
+    margin: 6px;
+    position: relative; 
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out, border-color 0.2s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 0 12px 4px #c68642;
+      transform: scale(1.02);
+      border-color: #c68642;
+    }
+
+    &.active {
+      box-shadow: 0 0 12px 4px #c68642;
+      transform: scale(1.02);
+      border-color: #c68642;
+    }
+  
+    .imageContainer {
+      position: relative; 
+      width: 240px;
+      height: 198px;
+      border-radius: 12px 0 0 12px;
+      margin-right: 12px;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+  
+    .info {
+      padding: 8px 0;
+      height: 100%;
+  
+      .name {
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .data {
+        font-size: 12px;
+        margin-top: 8px;
+      }
+  
+    }
+  }
+  

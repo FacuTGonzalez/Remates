@@ -121,3 +121,11 @@ a {
 .error-message {
   color: red;
 }
+
+.p-dialog-mask .p-dialog-center .p-component-overlay .p-component-overlay-enter .p-dialog-draggable .p-dialog-resizable {
+  background-color: white !important;
+}
+
+.p-dialog .p-component .p-dialog-default .p-ripple-disabled .p-dialog-enter-done {
+  background-color: white !important;
+}
