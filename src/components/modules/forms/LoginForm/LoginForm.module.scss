@@ -1,0 +1,11 @@
+.container {
+    width: 420px;
+    height: 420px;
+    background-color: white;
+    //opacity: 0.9;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 150px;
+    width: 100%;
+
+    .leftTitle {
+        color: white;
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+    .rightTitle {
+        color: #A0522D;
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+}

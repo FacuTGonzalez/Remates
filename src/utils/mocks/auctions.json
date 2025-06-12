@@ -1,0 +1,112 @@
+{
+  "auctions": [
+    {
+      "id": "1",
+      "name": "Ford Mustang Fastback",
+      "model": "1967",
+      "price": "45000",
+      "currentPrice": "49120",
+      "createdAt": "2025-06-10T15:30:00Z",
+      "image": "/mockImages/1967-ford-mustang-fastback-gt-500-tribute.jpeg"
+    },
+    {
+      "id": "2",
+      "name": "Chevrolet Camaro SS",
+      "model": "1969",
+      "price": "52000",
+      "currentPrice": "56680",
+      "createdAt": "2025-06-09T12:15:00Z",
+      "image": "/mockImages/1969-chevrolet-camaro.jpeg"
+    },
+    {
+      "id": "3",
+      "name": "Porsche 911 Carrera",
+      "model": "1973",
+      "price": "88000",
+      "currentPrice": "92050",
+      "createdAt": "2025-06-08T09:45:00Z",
+      "image": "/mockImages/Porsche 911 Carrera 1973.jpeg"
+    },
+    {
+      "id": "4",
+      "name": "Volkswagen Beetle",
+      "model": "1965",
+      "price": "12000",
+      "currentPrice": "16140",
+      "createdAt": "2025-06-11T10:00:00Z",
+      "image": "/mockImages/Volkswagen Beetle 1965.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Mercedes-Benz 300SL Gullwing",
+      "model": "1955",
+      "price": "15000",
+      "currentPrice": "19080",
+      "createdAt": "2025-06-07T17:00:00Z",
+      "image": "/mockImages/Mercedes-Benz 300SL Gullwing 1955.png"
+    },
+    {
+      "id": "6",
+      "name": "Ford Mustang Fastback",
+      "model": "1967",
+      "price": "45000",
+      "currentPrice": "49890",
+      "createdAt": "2025-06-10T15:30:00Z",
+      "image": "/mockImages/1967-ford-mustang-fastback-gt-500-tribute.jpeg"
+    },
+    {
+      "id": "7",
+      "name": "Chevrolet Camaro SS",
+      "model": "1969",
+      "price": "52000",
+      "currentPrice": "56210",
+      "createdAt": "2025-06-09T12:15:00Z",
+      "image": "/mockImages/1969-chevrolet-camaro.jpeg"
+    },
+    {
+      "id": "8",
+      "name": "Porsche 911 Carrera",
+      "model": "1973",
+      "price": "88000",
+      "currentPrice": "91270",
+      "createdAt": "2025-06-08T09:45:00Z",
+      "image": "/mockImages/Porsche 911 Carrera 1973.jpeg"
+    },
+    {
+      "id": "9",
+      "name": "Volkswagen Beetle",
+      "model": "1965",
+      "price": "12000",
+      "currentPrice": "15680",
+      "createdAt": "2025-06-11T10:00:00Z",
+      "image": "/mockImages/Volkswagen Beetle 1965.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Mercedes-Benz 300SL Gullwing",
+      "model": "1955",
+      "price": "15000",
+      "currentPrice": "19460",
+      "createdAt": "2025-06-07T17:00:00Z",
+      "image": "/mockImages/Mercedes-Benz 300SL Gullwing 1955.png"
+    },
+    {
+      "id": "11",
+      "name": "Ford Mustang Fastback",
+      "model": "1967",
+      "price": "45000",
+      "currentPrice": "48850",
+      "createdAt": "2025-06-10T15:30:00Z",
+      "image": "/mockImages/1967-ford-mustang-fastback-gt-500-tribute.jpeg"
+    },
+    {
+      "id": "12",
+      "name": "Chevrolet Camaro SS",
+      "model": "1969",
+      "price": "52000",
+      "currentPrice": "56730",
+      "createdAt": "2025-06-09T12:15:00Z",
+      "image": "/mockImages/1969-chevrolet-camaro.jpeg"
+    }
+  ]
+}

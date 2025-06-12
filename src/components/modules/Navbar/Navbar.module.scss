@@ -1,0 +1,11 @@
+.container {
+    height: 64px;
+    background-color: #B46C2D;
+    width: 100%;
+    position: relative;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
