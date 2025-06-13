@@ -1,0 +1,18 @@
+.container {
+    width: 420px;
+    max-height: 620px;
+    overflow-y: auto;
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+
+    .fields {
+        max-height: 400px;
+        overflow-y: auto;
+    }
+}
