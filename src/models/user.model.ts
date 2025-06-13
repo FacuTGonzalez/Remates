@@ -14,6 +14,15 @@ export interface User {
     isVerified: boolean
 }
 
+export interface RegisterUserConfig {
+    username: string;
+    entityName?: string;
+    name?: string;
+    lastName?: string;
+    'cuit-cuil': string;
+    location: string;
+}
+
 export enum UserRole {
     NATURAL_PERSON= 'NATURAL_PERSON',
     BANK = 'BANK',
