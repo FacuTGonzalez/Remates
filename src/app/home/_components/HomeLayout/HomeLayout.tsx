@@ -4,9 +4,9 @@ import styles from './HomeLayout.module.scss';
 import { menuActionsModules } from '@/utils/helpers/homeHelper';
 import { MenuButton } from '@/components/elements/RButton/MenuButton';
 import { getUserByUsername } from '@/utils/helpers/getUser';
-import { auctions } from '@/utils/mocks/auctions.json'
+import mockData from '@/utils/mocks/auctions.json'
 import { AuctionCard } from '@/components/modules/AuctionCard/AuctionCard';
-import { Auction } from '@/models/auction.model';
+import { Auction, AuctionMockData } from '@/models/auction.model';
 import { User } from '@/models/user.model';
 import { AuctionBidModal } from '@/components/modules/AuctionPushModal/AuctionBidModal';
 
@@ -15,6 +15,10 @@ export const HomeLayout = () => {
     const [userData, setUserData] = useState<User | null>(null);
     const [openBidModal, setOpenBidModal] = useState<boolean>(false);
     const [selectedAuction, setSelectedAuction] = useState<Auction | null>(null);
+
+    
+  const _mockData = mockData as AuctionMockData;
+  const auctions = _mockData.auctions;
 
     useEffect(() => {
         const session = localStorage.getItem('userSession');
