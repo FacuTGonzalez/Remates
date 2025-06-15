@@ -28,6 +28,7 @@ export const AuctionCard = ({ auction, onClick }: AuctionCardProps) => {
           <p className={styles.name}>{auction.name}</p>
           <p className={styles.data}><strong>Modelo:</strong> {auction.model}</p>
           <p className={styles.data}><strong>Publicado:</strong> {format(new Date(auction.createdAt), 'dd/MM/yyyy')}</p>
+          <p className={styles.data}><strong>Finalización:</strong> {format(new Date(auction.endDate), 'dd/MM/yyyy')}</p>
           <p className={styles.data}><strong>Precio inicial:</strong> {formatCurrency(auction.price)}</p>
           <p className={styles.data}><strong>Precio actual:</strong> {formatCurrency(auction.currentPrice)}</p>
         </div>
