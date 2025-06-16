@@ -129,3 +129,8 @@ a {
 .p-dialog .p-component .p-dialog-default .p-ripple-disabled .p-dialog-enter-done {
   background-color: white !important;
 }
+
+.p-button .p-component .p-fileupload-choose {
+  background-color: white !important;
+  color: black !important;
+}

@@ -17,7 +17,7 @@ export const RInputText = ({ id, label, value, onChange, className, errorMessage
         <div className='flex flex-column'>
             <label htmlFor="username">{label}</label>
             <InputText maxLength={maxLength} name={name} className={className} id={id} aria-describedby="username-help" value={value} onChange={onChange} />
-            {errorMessage && <small className='error-message' id="username-help">
+            {errorMessage && <small className="p-error" id="username-help">
                 {errorMessage}
             </small>}
         </div>

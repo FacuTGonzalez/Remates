@@ -8,11 +8,11 @@ export const menuActionsModules = [
     },
     {
         roles: [UserRole.BANK, UserRole.JUDICIAL_ENTITY, UserRole.NATURAL_PERSON],
-        label: 'Ventas', 
+        label: 'Ventas',
         route: '/sales'
     },
     {
-        roles: [UserRole.BANK, UserRole.JUDICIAL_ENTITY, UserRole.NATURAL_PERSON],
+        roles: [UserRole.NATURAL_PERSON],
         label: 'Ofertas',
         route: '/offers'
     },

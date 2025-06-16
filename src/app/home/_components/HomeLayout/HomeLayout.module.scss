@@ -3,23 +3,22 @@
 
   .leftSection {
     height: 93.2vh;
-    background-color: #B46C2D;
-    min-width: 280px;
-    max-width: 420px;
+    background-color: #b46c2d5e;
+    min-width: 310px;
+    max-width: 320px;
     padding: 16px 2px 0 2px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     .userCard {
-      background-color: #c68642; // marrón claro
+      background-color: #c686429c;
       border-radius: 12px;
       padding: 16px;
-      color: #1e1e1e;
+      color: white;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      font-family: 'Segoe UI', sans-serif;
       margin: 0 16px;
-      height: 200px;
+      height: 220px;
 
       .name {
         font-size: 20px;

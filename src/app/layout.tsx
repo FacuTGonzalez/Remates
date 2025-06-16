@@ -10,6 +10,7 @@ import "./globals.css";
 import { ToastProvider } from "@/context/toast";
 import { Navbar } from "@/components/modules/Navbar/Navbar";
 import { NavbarWrapper } from "@/components/modules/NavbarWrapper/NavbarWrapper";
+import { ChildrenWrapper } from "@/components/modules/ChildrenWrapper/ChildrenWrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,8 +38,10 @@ export default function RootLayout({
         <div className="page-body">
           <ToastProvider>
             <PrimeReactProvider>
-              <NavbarWrapper/>
-              {children}
+              <NavbarWrapper />
+              <ChildrenWrapper>
+                {children}
+              </ChildrenWrapper>
             </PrimeReactProvider>
           </ToastProvider>
         </div>
