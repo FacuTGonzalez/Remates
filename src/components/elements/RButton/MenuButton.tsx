@@ -14,7 +14,7 @@ export const MenuButton: React.FC<MenuButtonProps> = ({ label, path, onClick, fu
     const router = useRouter();
 
     const _onClick = () => {
-        if(onClick) onClick
+        if(onClick) onClick();
         if(path) router.push(path);
         return
     };

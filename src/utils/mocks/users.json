@@ -6,10 +6,10 @@
             "name": "Juan",
             "lastName":"Perez",
             "password": "password1234",
-            "cuit": "20245874123",
+            "cuit": "20-24587412-3",
             "location": "Banfield, Buenos Aires, Argentina",
             "isVerified": true,
-            "role": "ADMIN"
+            "role": "NATURAL_PERSON"
         },
         {
             "id": 2, 
@@ -17,7 +17,7 @@
             "name": "Esteban",
             "lastName":"Rodriguez",
             "password": "password1234",
-            "cuit": "20245874123",
+            "cuit": "20-24587412-3",
             "location": "Banfield, Buenos Aires, Argentina",
             "isVerified": true,
             "role": "NATURAL_PERSON"
@@ -27,7 +27,7 @@
             "username": "poderjudicial@gmail.com", 
             "password": "password1234",
             "entityName" : "Poder judicial Banfield",
-            "cuit": "20245874123",
+            "cuit": "20-24587412-3",
             "location": "Banfield, Buenos Aires, Argentina",
             "isVerified": true,
             "role": "JUDICIAL_ENTITY"
@@ -37,7 +37,7 @@
             "username": "rematebbva@bbva.com",
             "password": "password1234",
             "entityName" : "BBVA",
-            "cuit": "20245874123",
+            "cuit": "20-24587412-3",
             "location": "Banfield, Buenos Aires, Argentina",
             "isVerified": true,
             "role": "BANK"

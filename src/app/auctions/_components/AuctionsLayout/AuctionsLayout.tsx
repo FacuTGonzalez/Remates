@@ -32,7 +32,7 @@ const onNewBid = () => {
   return (
     <div className={styles.container}>
       <h2 className='text-white'>REMATES EN CURSO</h2>
-      <div className='flex flex-wrap'>
+      <div className='flex justify-content-center flex-wrap'>
         {
           auctionsToModule.map((a, i) => <AuctionCard onClick={onSelect} key={i} auction={a} />)
         }
