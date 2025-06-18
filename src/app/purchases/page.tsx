@@ -1,11 +1,10 @@
 import React from 'react'
+import PaymentsLayout from './_components/PurchasesLayout';
 
 
  const Purchase = () => {
   return (
-    <div>
-        
-    </div>
+    <PaymentsLayout/>
   )
 }
 export default Purchase;
