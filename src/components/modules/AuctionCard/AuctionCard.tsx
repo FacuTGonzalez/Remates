@@ -10,12 +10,13 @@ import { formatCurrency } from '@/utils/helpers/currency';
 
 type AuctionCardProps = {
   auction: Auction;
-  onClick(auction: Auction):void;
+  onClick?(auction: Auction):void;
 }
 
 export const AuctionCard = ({ auction, onClick }: AuctionCardProps) => {
 
   const _onClick = () => {
+  if(!onClick)return
     onClick(auction)
   }
 
