@@ -1,5 +1,4 @@
 'use client'
-
 import { Dialog } from 'primereact/dialog';
 import { Calendar } from 'primereact/calendar';
 import { InputNumber } from 'primereact/inputnumber';
@@ -12,6 +11,7 @@ import { Button } from 'primereact/button';
 import { RInputText } from '@/components/elements/RInputText/RInputText';
 import { getFormErrorMessage } from '@/utils/errorMessageResolvers';
 import styles from './PublicAuctionModal.module.scss';
+import "primereact/resources/themes/arya-orange/theme.css";
 
 import { CREATE_AUCTION_FIELDS, createAuctionSchema } from './constants';
 
@@ -126,7 +126,6 @@ export const PublicAuctionModal = ({ onHide, visible, onAction }: PublicAuctionM
                             </span>
 
                             <div className={styles.inputFile}>
-
                                 <FileUpload
                                     name={name}
                                     accept="image/*"
@@ -194,10 +193,12 @@ export const PublicAuctionModal = ({ onHide, visible, onAction }: PublicAuctionM
                     ))}
                 </div>
                 <div className="flex justify-content-center my-4">
-                    <Button className='p-1 w-10rem mr-2' label="Cancelar" icon="pi pi-gavel" onClick={onHideInterceptor} />
+                    <Button className='p-1 w-10rem mr-2' label="Cancelar" icon="pi pi-gavel" style={{ backgroundColor: '#A0522D' }}
+                        onClick={onHideInterceptor} />
                     <Button
                         type="submit"
                         className="rounded p-2 w-10rem"
+                        style={{ backgroundColor: '#A0522D' }}
                         label="Publicar"
                         disabled={!isValid}
                     />
