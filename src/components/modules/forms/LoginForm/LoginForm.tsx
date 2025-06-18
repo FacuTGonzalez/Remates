@@ -94,7 +94,7 @@ export const LoginForm = () => {
             </div>
             <div className="flex gap-2 justify-content-center align-items-center">
                 <p className="text-sm">¿No tenés usuario?</p>
-                <a href="/register" className="text-sm text-primary-color hover:underline">Registrate</a>
+                <a href="/registerAccount" className="text-sm text-primary-color hover:underline">Registrate</a>
             </div>
         </form>
     );
